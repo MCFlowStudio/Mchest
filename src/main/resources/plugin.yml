@@ -1,0 +1,11 @@
+name: Mchest
+version: '${project.version}'
+main: com.flow.mchest.Mchest
+api-version: '1.20'
+
+depend:
+  - PlaceholderAPI
+
+commands:
+  chest:
+    permission: mchest.command.chest

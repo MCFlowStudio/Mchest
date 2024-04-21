@@ -1,0 +1,32 @@
+database:
+  mysql:
+    host: "127.0.0.1"
+    port: "3306"
+    username: "root"
+    password: "1234"
+    database: "mchest"
+    poolsize: 30
+
+chests:
+  1:
+    inventory-title: "1번 창고"
+    inventory-size: 54
+
+sounds:
+  chest_open_sound:
+    sound: BLOCK_CHEST_OPEN
+    volume: 1.0
+    pitch: 1.0
+  chest_close_sound:
+    sound: BLOCK_CHEST_CLOSE
+    volume: 1.0
+    pitch: 1.0
+  not_permission_sound:
+    sound: BLOCK_ANVIL_USE
+    volume: 1.0
+    pitch: 0.8
+
+message:
+  error-not-args: '<white>올바른 사용법이 아닙니다.'
+  error-not-permission: '<white>권한이 부족합니다.'
+  error-not-target: '<white>%1% 님은 없는 유저입니다.'
