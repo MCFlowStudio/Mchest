@@ -104,7 +104,7 @@ public class StorageDataService {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return new Chest(uuid, new HashMap<>()); // 에러 발생 시 빈 Chest 반환
+            return new Chest(uuid, new HashMap<>());
         }
         return new Chest(uuid, contentsMap.isEmpty() ? new HashMap<>() : contentsMap);
     }
@@ -121,7 +121,7 @@ public class StorageDataService {
 
                     ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                     BukkitObjectOutputStream dataOutput = new BukkitObjectOutputStream(byteArrayOutputStream);
-                    dataOutput.writeInt(items.length); // 배열 길이를 먼저 기록
+                    dataOutput.writeInt(items.length);
                     for (ItemStack item : items) {
                         dataOutput.writeObject(item);
                     }
@@ -155,7 +155,7 @@ public class StorageDataService {
 
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                 BukkitObjectOutputStream dataOutput = new BukkitObjectOutputStream(byteArrayOutputStream);
-                dataOutput.writeInt(items.length); // 배열 길이를 먼저 기록
+                dataOutput.writeInt(items.length);
                 for (ItemStack item : items) {
                     dataOutput.writeObject(item);
                 }
