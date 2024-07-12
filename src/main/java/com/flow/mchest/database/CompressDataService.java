@@ -17,7 +17,6 @@ import java.util.zip.GZIPOutputStream;
 
 public class CompressDataService {
 
-    // ItemStack 배열을 비동기로 압축
     public static CompletableFuture<byte[]> compressData(ItemStack[] items) {
         byte[] compressedData = null;
 
